@@ -1,0 +1,531 @@
+
+body {
+  background-color: #f2f5f9;  /* Light grey background for a clean look */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background-color:rgba(123, 123, 247, 0.823) ;  /* Dark grey-blue for a professional header */
+  color: white;
+  padding: 15px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+#logo {
+  width: 100px;
+  height: auto;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ECF0F1;  /* Light grey text for a modern look */
+  font-weight: 600;
+  padding: 8px 12px;
+  margin: 0 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color:rgba(49, 49, 151, 0.823);  /* Soft blue for hover effect */
+  color: #fff;
+}
+
+nav a:active {
+  background-color:rgba(49, 49, 151, 0.823);  /* Darker blue when active */
+}
+
+/* Style général du formulaire de recherche */
+#search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 500px;
+  position: relative; /* Nécessaire pour positionner l'icône */
+}
+
+/* Style du champ de recherche */
+#search-input {
+  width: 100%;
+  padding: 10px 40px; /* Espace pour l'icône */
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  outline: none; /* Supprime l'effet bleu au focus */
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#search-input:focus {
+  border-color: #007BFF;
+  box-shadow: none; /* Supprime l'effet lumineux */
+}
+
+/* Icône de recherche dans le champ */
+#search-icon {
+  position: absolute;
+  left: 10px; /* Position à gauche */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #999; /* Couleur grise pour l'icône */
+  pointer-events: none; /* Empêche de cliquer sur l'icône */
+}
+
+/* Bouton de recherche caché (si nécessaire) */
+#search-button {
+  display: none;
+}
+
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+main p {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 20px 0;
+  line-height: 1.8;
+}
+
+.map area {
+  cursor: pointer;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: calc(100vh - 80px);
+}
+
+.text-content {
+  flex: 1;
+  margin-right: 20px;
+  padding: 20px;
+  background-color: #f4f6f9;
+  text-align: left;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-content p {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.8;
+  margin: 0;
+  max-width: 90%;
+}
+
+.image-content {
+  flex: 1;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.image-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+ 
+}
+
+table {
+  width: 70%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+img {
+  width: 200px;
+  height: 150px;
+  border-radius: 15px;
+}
+
+.tsouligne {
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tbold {
+  font-weight: bold;
+}
+
+.section {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+.formtitle {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: #637de2;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #637de2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color:  #637de2;
+}
+
+button:active {
+  background-color:  #637de2;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 20px;
+  }
+
+  .formtitle {
+    font-size: 20px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  input, textarea {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
+
+/* Style général pour le conteneur du paragraphe et de l'audio */
+.audio-container {
+  width: 100%;
+  max-width: 600px; /* Limite la largeur du conteneur */
+  margin: 20px auto; /* Centre le conteneur */
+  text-align: center; /* Aligne le texte au centre */
+}
+
+/* Paragraphe au-dessus de l'audio */
+.audio-container p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px; /* Espace entre le texte et l'audio */
+}
+/* Style général pour le paragraphe et l'audio */
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px; /* Espace entre le texte et l'audio */
+}
+
+
+
+
+/* Style de l'élément audio */
+audio {
+  display: block; /* Assure que l'audio prend toute la largeur */
+  width: 100%; /* Rends l'audio aussi large que le conteneur */
+  margin-top: 10px; /* Espace entre le texte et le player audio */
+  border-radius: 4px; /* Bord arrondi pour le player */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.video-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  padding: 15px;
+  border-radius: 8px;
+  
+}
+
+video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+#paysage {
+  text-align: center;
+  padding: 40px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center; /* Centre les images horizontalement */
+  gap: 20px; /* Espacement entre les images */
+  flex-wrap: nowrap; /* Empêche les images de passer à une nouvelle ligne */
+  overflow-x: auto; /* Permet de scroller horizontalement si les images dépassent la largeur */
+  padding: 20px;
+}
+
+.image-card {
+  width: 250px; /* Taille fixe pour chaque carte */
+  text-align: center;
+  flex-shrink: 0; /* Empêche les cartes de rétrécir si l'espace est limité */
+}
+
+.image-card img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-card img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 5px rgba(0, 0, 0, 0.3);
+}
+
+.image-card p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;}
+  /* Section de la carte */
+#map-section {
+  text-align: center;
+  padding: 40px;
+}
+
+.map-container {
+  position: relative;
+  display: inline-block;
+}
+
+.world-map {
+  width: 1500px;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.marker {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+/* Modale */
+.hidden {
+  display: none;
+}
+
+#info-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.modal-content {
+  text-align: center;
+}
+
+.modal-content h3 {
+  margin: 10px 0;
+}
+
+.modal-content p {
+  margin: 10px 0 20px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #333;
+}
+/* Footer styling */
+.footer {
+  background-color: #637de2; /* Couleur sombre élégante */
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 4px solid #637de2; /* Ligne décorative */
+  font-family: 'Arial', sans-serif;
+}
+
+/* Contact box styling */
+.contact-box {
+  display: inline-block;
+  border: 2px solid#637de2; /* Bordure du cadre */
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  border-radius: 100px; /* Coins arrondis */
+  background-color: #fef6f6; /* Fond du cadre */
+}
+
+.contact-box p {
+  margin: 0;
+  font-size: 18px;
+  color: #060607; /* Couleur du texte */
+  font-weight: bold;
+}
+
+/* Social icons */
+.footer .social-icons {
+  margin: 15px 0;
+}
+
+.footer .social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.footer .social-icons .icon {
+  width: 40px; /* Taille des icônes */
+  height: 40px;
+  border-radius: 50%; /* Rendre les icônes rondes */
+  border: 2px solid#637de2; /* Bordure professionnelle */
+  padding: 5px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.footer .social-icons .icon:hover {
+  transform: scale(1.2); /* Zoom au survol */
+  box-shadow: 0 4px 10px rgba(244, 162, 97, 0.6); /* Ombre élégante */
+}
+
+/* Footer copyright */
+.footer p:last-of-type {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #111010; /* Couleur grisée pour le copyright */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .footer {
+    font-size: 14px;
+  }
+
+  .footer .social-icons .icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .contact-box p {
+    font-size: 16px;
+  }
+}
+
+

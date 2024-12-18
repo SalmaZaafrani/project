@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Paysages et Merveilles Naturelles</title>
+</head>
+
+<body>
+  <header>
+
+    <nav>
+      <a><img id="logo" src="logo.png" alt=""></a>
+      <a href="index.html">Accueil</a>
+      <a href="culture.html">Culture</a>
+      <a href="gastronomie.html">Gastronomie</a>
+      <a href="paysages.html">Paysage</a>
+      <a href="contact.html">Contact</a>
+      <form id="search-form">
+        <input type="text" id="search-input" placeholder="Rechercher...">
+        <button type="submit" id="search-button">🔍</button>
+      </form>
+    </nav>
+
+  </header>
+
+
+  <main>
+    <section id="paysage">
+      <h2>Paysages Éblouissants</h2>
+      <p>Explorez les merveilles naturelles du monde. Chaque paysage raconte une histoire unique, riche en beauté et en
+        diversité.</p>
+
+      <div class="gallery">
+        <div class="row">
+          <div class="image-card">
+            <h3>Grand Canyon</h3>
+            <a href="https://fr.wikipedia.org/wiki/Grand_Canyon" target="_blank">
+            <img src="le grand canyon.jpg" alt="Grand Canyon">
+          </div>
+          <div class="image-card">
+            <h3>Machu Picchu</h3>
+            <a href="https://fr.wikipedia.org/wiki/Machu_Picchu" target="_blank">
+            <img src="machu picchu mountain.jpg" alt="Machu Picchu">
+          </div>
+        </div>
+
+        <div class="image-card">
+          <h3>Bora Bora</h3>
+          <a href="https://fr.wikipedia.org/wiki/Bora-Bora" target="_blank">
+          <img src="bora bora.jpg" alt="Bora Bora">
+        </div>
+        <div class="image-card">
+          <h3>Les Alpes</h3>
+          <a href="https://fr.wikipedia.org/wiki/Alpes" target="_blank">
+          <img src="les alpes.jpg" alt="Les Alpes">
+        </div>
+      </div>
+      </div>
+      <div class="gallery">
+        <div class="row">
+          <div class="image-card">
+            <h3>Les foréts tropicales</h3>
+            <a href="https://fr.wikipedia.org/wiki/For%C3%AAt_tropicale" target="_blank">
+            <img src="forets tropicales.jpg" alt="foréts tropicales">
+          </div>
+          <div class="image-card">
+            <h3>Oasis de montagne</h3>
+            <a href="https://discovertozeur.com/oasis-de-montagne/" target="_blank">
+            <img src="oasis de montagne.webp" alt="oasis de montagne">
+          </div>
+        </div>
+
+        <div class="image-card">
+          <h3>Le lagon rose de Mexique</h3>
+          <a href="https://www.globe-trotting.com/post/lagon-rose-du-yucatan" target="_blank">
+          <img src="le lagon.jpg" alt="lagon">
+        </div>
+        <div class="image-card">
+          <h3>Le desert de Namibie</h3>
+          <a href="https://www.namibie-en-liberte.com/conseils-voyage/deserts/desert-du-namib" target="_blank">
+          <img src="desert de namibie.jpg" alt="desert de Namibie">
+        </div>
+      </div>
+      </div>
+
+    </section>
+
+  </main>
+  <section id="map-section">
+    <h2>Explorez les Paysages</h2>
+    <p>Cliquez sur un marqueur pour découvrir des anecdotes sur les paysages célèbres du monde.</p>
+    
+    <div class="map-container">
+      <img src="carte-du-monde.jpg" alt="Carte du monde" class="world-map">
+      <!-- Marqueurs -->
+      <div class="marker" style="top: 30%; left: 40%;" data-place="Grand Canyon" data-info="Un canyon spectaculaire aux États-Unis, sculpté par le fleuve Colorado."></div>
+      <div class="marker" style="top: 50%; left: 20%;" data-place="Machu Picchu" data-info="Un site historique et emblématique du Pérou." ></div>
+      <div class="marker" style="top: 70%; left: 80%;" data-place="Bora Bora" data-info="Une île paradisiaque connue pour ses plages et lagons en Polynésie française." ></div>
+      <div class="marker" style="top: 30%; left: 40%;" data-place="les Alpes" data-info=""></div>
+      <div class="marker" style="top: 50%; left: 20%;" data-place="Les foréts tropicales" data-info=""></div>
+      <div class="marker" style="top: 70%; left: 80%;" data-place="Oasis de montagne" data-info=""></div>
+      <div class="marker" style="top: 30%; left: 40%;" data-place="Le lagon rose de Mexique" data-info=""></div>
+      <div class="marker" style="top: 50%; left: 20%;" data-place="Le desert de Namibie" data-info=""></div>
+   
+    </div>
+    <audio controls>
+      <source src="BIENVENUE SUR VOTRE TOUR DU MONDE _).mp3" type="audio/mp3">
+      Votre navigateur ne supporte pas la balise audio.
+    </audio>
+    
+  </section>
+  
+  <!-- Modale pour afficher les détails -->
+  <div id="info-modal" class="hidden">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3 id="place-title"></h3>
+      <p id="place-info"></p>
+      <audio id="place-audio" controls></audio>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="contact-box">
+       <p>Contactez-nous sur :</p>
+    </div>
+    <div class="social-icons">
+      <a href="https://www.facebook.com" target="_blank">
+        <img src="facebook.jpg" alt="Facebook" class="icon" />
+      </a>
+      <a href="https://www.instagram.com" target="_blank">
+        <img src="instagram.jpg" alt="Instagram" class="icon" />
+      </a>
+      <a href="https://www.whatsapp.com" target="_blank">
+        <img src="whatsapp.jpg" alt="WhatsApp" class="icon" />
+      </a>
+    </div>
+    <p>© 2024 Tour du Monde Virtuel. Tous droits réservés.</p>
+  </footer>
+  
+</body>
+
+</html>
